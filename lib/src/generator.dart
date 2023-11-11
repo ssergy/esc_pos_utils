@@ -578,7 +578,7 @@ class Generator {
 
     invert(image);
     flip(image, Flip.horizontal);
-    final Image imageRotated = copyRotate(image, 270);
+    final Image imageRotated = copyRotate(image, angle: 270);
 
     const int lineHeight = highDensityVertical ? 3 : 1;
     final List<List<int>> blobs = _toColumnFormat(imageRotated, lineHeight * 8);
